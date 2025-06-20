@@ -43,6 +43,7 @@ class AURA_API UAuraWidgetController : public UObject
 
 public:
 	void SetWidgetControllerParams(const FWidgetControllerParams& WidgetControllerParams);
+	virtual void BroadcastInitialValues();
 
 protected:
 	// 종속성 설정 Controller -> Model (data) 

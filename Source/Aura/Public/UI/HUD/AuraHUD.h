@@ -18,7 +18,7 @@ struct FWidgetControllerParams;
 /**
  * 
  */
-UCLASS()
+UCLASS() 
 class AURA_API AAuraHUD : public AHUD
 {
 	GENERATED_BODY()
@@ -28,7 +28,6 @@ public:
 	TObjectPtr<UAuraUserWidget> OverlayWidget;
 
 	UAuraOverlayWidgetController* GetOverlayWidgetController(const FWidgetControllerParams& WidgetControllerParams);
-
 	void InitOverlay(APlayerController* PC, APlayerState* PS, UAbilitySystemComponent* ASC, UAttributeSet* AS);
 
 protected:
